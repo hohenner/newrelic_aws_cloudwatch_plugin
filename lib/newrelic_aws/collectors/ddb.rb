@@ -31,7 +31,7 @@ module NewRelicAWS
               :metric_name => metric_name,
               :statistic   => statistic,
               :unit        => unit,
-              :start_time  => (Time.now.utc-1.hour.to_i).iso8601
+              :start_time  => (Time.now.utc-3600).iso8601,
               :dimension   => {
                 :name  => "TableName",
                 :value => table_name
