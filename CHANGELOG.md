@@ -1,11 +1,27 @@
+<<<<<<< .merge_file_eAxvFP
 ## New Relic AWS CloudWatch Plugin ##
 
 ### v3.3.0 - Unreleased ###
+=======
+## New Relic Amazon CloudWatch Plugin ##
+
+### v3.3.1 - Unreleased ###
+
+**Bug Fixes**
+
+* Fixed cloudwatch_delay bug for EC2, EBS, SNS, and SQS where end_time was being set incorrectly
+
+### v3.3.0 - January 22, 2014 ###
+>>>>>>> .merge_file_PKcBS2
 
 **Features**
 
 * Added AWS tag filtering for EC2 and EBS instances
 * Added new metrics to ELB: `BackendConnectionErrors`, `SurgeQueueLength`, and `SpilloverCount`
+<<<<<<< .merge_file_eAxvFP
+=======
+* Added new `ECR` plugin support for ElastiCache Redis
+>>>>>>> .merge_file_PKcBS2
 
 **Bug Fixes**
 
@@ -26,4 +42,8 @@
 
 **Features**
 
+<<<<<<< .merge_file_eAxvFP
 * Upgraded AWS SDK to 1.24.0 for general improvements
+=======
+* Upgraded AWS SDK to 1.24.0 for general improvements
+>>>>>>> .merge_file_PKcBS2

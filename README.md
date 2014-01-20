@@ -1,4 +1,4 @@
-# New Relic AWS
+# New Relic Amazon CloudWatch Plugin
 
 This tool provides the metric collection agents for the following New Relic plugins:
 
@@ -9,6 +9,8 @@ This tool provides the metric collection agents for the following New Relic plug
 - SQS
 - SNS
 - ElastiCache
+  - Memcached
+  - Redis
 
 ## Dependencies
 - A single t1.micro EC2 instance (in any region)
@@ -18,6 +20,8 @@ This tool provides the metric collection agents for the following New Relic plug
 - Git
 
 ## Install
+
+### Manual Installation
 1. Download the latest tagged version from [https://github.com/newrelic-platform/newrelic_aws_cloudwatch_extension/tags](https://github.com/newrelic-platform/newrelic_aws_cloudwatch_extension/tags)
 2. Extract to the location you want to run the plugin from
 3. Rename `config/template_newrelic_plugin.yml` to `config/newrelic_plugin.yml`
@@ -25,9 +29,18 @@ This tool provides the metric collection agents for the following New Relic plug
 5. Run `bundle install`
 6. Run `bundle exec ./bin/newrelic_aws` (or on Windows `bundle exec ruby bin\newrelic_aws`)
 
+### Installation with Chef/Puppet
+
+[Chef](http://www.getchef.com) and [Puppet](http://puppetlabs.com) are tools that automate software installation. The Amazon CloudWatch plugin has installation support for both:
+
+  - [Chef Cookbook](http://community.opscode.com/cookbooks/newrelic_plugins)
+  - [Puppet Module](https://forge.puppetlabs.com/newrelic/newrelic_plugins)
+
+**Note:** For more information on using Chef and Puppet with New Relic, see the New Relic [docs](https://docs.newrelic.com/docs/plugins/plugin-installation-with-chef-and-puppet).
+
 ## Configuration
 
-This plugin is configured through the `config/newrelic_plugin.yml` file. It requires: 
+This plugin is configured through the `config/newrelic_plugin.yml` file. It requires:
 
 - a New Relic license key that can be found at https://rpm.newrelic.com/extensions/com.newrelic.aws.ec2
 - an AWS Access Key
@@ -35,6 +48,10 @@ This plugin is configured through the `config/newrelic_plugin.yml` file. It requ
 
 ### Regions
 The plugin can also be configured to query specific CloudWatch regions, e.g. `us-east-1` or `us-west-1`. By default the plugin will query all available regions.
+
+### Amazon ElastiCache
+
+Amazon ElastiCache supports both Memcached and Redis caching technologies. The Memcached agent is configured under the `ec` section, while the Redis agent is configured under the `ecr` section.
 
 ### Tag Filtering
 
@@ -53,12 +70,12 @@ If there are no configured tags, all available instances will be monitored. This
 ...
 agents:
   ec2:
-    overview: false
+    enabled: true
     tags:
       - newrelic_monitored
       - prod_1_db
   ebs:
-    overview: false
+    enabled: true
     tags:
       - newrelic_monitored
 ```
@@ -70,10 +87,10 @@ As noted below, there is a default 60 second delay in reporting metrics from Clo
 ...
 agents:
   ec2:
-    overview: false
+    enabled: true
     cloudwatch_delay: 120
   ebs:
-    overview: false
+    enabled: true
 ...
 ```
 
@@ -139,6 +156,13 @@ You can use services like these to manage this process.
 - [Systemd](http://www.freedesktop.org/wiki/Software/systemd/)
 - [Runit](http://smarden.org/runit/)
 - [Monit](http://mmonit.com/monit/)
+
+## Or run it as a daemon
+The provided daemon.rb file allows newrelic_aws to run as a daemon.
+
+    chmod +x bin/daemon
+    bundle exec bin/daemon start
+    bundle exec bin/daemon stop
 
 ## For support
 Plugin support and troubleshooting assistance can be obtained by visiting [support.newrelic.com](https://support.newrelic.com)
