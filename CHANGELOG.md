@@ -1,6 +1,6 @@
 
 
-### v3.3.0 - Unreleased ###
+### v3.3.0 - January 22, 2014 ###
 
 ## New Relic Amazon CloudWatch Plugin ##
 
