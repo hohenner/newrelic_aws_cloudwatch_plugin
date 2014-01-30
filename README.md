@@ -38,6 +38,15 @@ This tool provides the metric collection agents for the following New Relic plug
 
 **Note:** For more information on using Chef and Puppet with New Relic, see the New Relic [docs](https://docs.newrelic.com/docs/plugins/plugin-installation-with-chef-and-puppet).
 
+### Installation with Chef/Puppet
+
+[Chef](http://www.getchef.com) and [Puppet](http://puppetlabs.com) are tools that automate software installation. The Amazon CloudWatch plugin has installation support for both:
+
+  - [Chef Cookbook](http://community.opscode.com/cookbooks/newrelic_plugins)
+  - [Puppet Module](https://forge.puppetlabs.com/newrelic/newrelic_plugins)
+
+**Note:** For more information on using Chef and Puppet with New Relic, see the New Relic [docs](https://docs.newrelic.com/docs/plugins/plugin-installation-with-chef-and-puppet).
+
 ## Configuration
 
 This plugin is configured through the `config/newrelic_plugin.yml` file. It requires:
