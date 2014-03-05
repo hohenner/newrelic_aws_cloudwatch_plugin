@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1ca2d7-3abd-4880-b54b-741bc88f2713" name="Default" comment="merging to latest code from NewRelic">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/daemon.rb" />
     </list>
     <ignored path="newrelic_aws_cloudwatch_plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,7 +94,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="576" column="123" selection-start="32531" selection-end="32531" vertical-scroll-proportion="0.69855595" vertical-offset="8253" max-vertical-offset="11550">
+            <state line="577" column="123" selection-start="32672" selection-end="32672" vertical-scroll-proportion="0.70108694" vertical-offset="8268" max-vertical-offset="11565">
               <folding />
             </state>
           </provider>
@@ -332,6 +331,9 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -375,9 +377,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2004" y="-370" width="1680" height="980" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -755,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="576" column="123" selection-start="32531" selection-end="32531" vertical-scroll-proportion="0.69855595" vertical-offset="8253" max-vertical-offset="11550">
+        <state line="577" column="123" selection-start="32672" selection-end="32672" vertical-scroll-proportion="0.70108694" vertical-offset="8268" max-vertical-offset="11565">
           <folding />
         </state>
       </provider>
