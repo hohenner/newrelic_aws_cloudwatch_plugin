@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e1ca2d7-3abd-4880-b54b-741bc88f2713" name="Default" comment="merging to latest code from NewRelic">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/daemon.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/daemon.rb" afterPath="" />
     </list>
     <ignored path="newrelic_aws_cloudwatch_plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +94,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="577" column="123" selection-start="32672" selection-end="32672" vertical-scroll-proportion="0.70108694" vertical-offset="8268" max-vertical-offset="11565">
+            <state line="579" column="123" selection-start="32655" selection-end="32655" vertical-scroll-proportion="0.70108694" vertical-offset="8298" max-vertical-offset="11595">
               <folding />
             </state>
           </provider>
@@ -757,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="577" column="123" selection-start="32672" selection-end="32672" vertical-scroll-proportion="0.70108694" vertical-offset="8268" max-vertical-offset="11565">
+        <state line="579" column="123" selection-start="32655" selection-end="32655" vertical-scroll-proportion="0.70108694" vertical-offset="8298" max-vertical-offset="11595">
           <folding />
         </state>
       </provider>
